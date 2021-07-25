@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lado a Lado</title>
+    <link rel="stylesheet" href="./styles/basic-style.css">
+    <link rel="stylesheet" href="./styles/products-style.css">
+    <link rel="shortcut icon" href="./src/ladoalado.PNG" />
+
+</head>
+<body onload="preencheTabelaProduto()">
+    <header>
+        <div id="logo">
+            <img src="./src/ladoalado.PNG" alt="Logomarca da empresa">
+        </div>
+        <nav>
+            <ul>
+                <li class="menu-item"><a href="./index.html">Início</a></li>
+                <li class="menu-item"><a>Produtos</a></li> 
+                <li class="menu-item"><a href="./clients.html">Clientes</a></li>
+                <li class="menu-item"><a href="./store.html">Loja</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="main">
+            <div id="product">
+                <h1>Produtos</h1>
+                <div id="container-produtos">
+                    <div id="container-tabela-produtos">
+                        <table summary="Produtos cadastrados">
+                            <caption>Tabela de produtos cadastrados</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Código</th>
+                                    <th scope="col">Nome do Produto</th>
+                                    <th scope="col">Preço do venda</th>
+                                </tr>
+                            </thead>
+                            <tbody id="itens-tabela-produtos">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="container-cadastro-produto" >
+                        <h2>Cadastro</h2>
+                        <form id="form">
+                            <div class="div-form">
+                                <label for="campo-nome">Nome</label>
+                                <input type="text" name="nome" id="campo-nome">
+                            </div>
+                            <div class="div-form">
+                                <label for="campo-preco">Preço</label>
+                                <input type="number" name="preco" id="campo-preco" step=".01">
+                            </div>
+                            <div class="div-form">
+                                <label for="campo-descricao">Descrição</label>
+                                <input type="text" name="descricao" id="campo-descricao">
+                            </div>
+                            <div class="div-form">
+                                <label for="campo-img">Imagem</label>
+                                <input type="url" name="imagem" id="campo-img" placeholder="Insira a URL da imagem">
+                                </div>
+                            <div id="div-input">
+                                <input type="submit" value="Salvar" existe="false" produto="" id="salvar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>    
+    <footer>
+        <a class="redes-sociais" href="https://www.linkedin.com/in/felipesiqg/" target="_blank"><img class="redes-sociais" src="./src/linkedin.png" alt="linkedin"></a>
+        <p>Desenvolvido por Felipe Siqueira</p>
+        <a class="redes-sociais" href="https://github.com/felipesiqg" target="_blank"><img class="redes-sociais" src="./src/github.png" alt="github"></a>
+    </footer>
+    <script src="./scripts/products.js"></script>
+    
+</body>
+</html>

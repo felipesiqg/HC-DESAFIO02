@@ -1,0 +1,16 @@
+#home h2{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+}
+#home p:nth-child(4), #home p:nth-child(5) {
+    text-align: center;
+    margin-bottom: 5px;
+}
+#home h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+h3+p{
+    margin-left: 20px;
+}

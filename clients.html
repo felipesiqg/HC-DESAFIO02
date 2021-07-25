@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lado a Lado</title>
+    <link rel="stylesheet" href="./styles/basic-style.css">
+    <link rel="stylesheet" href="./styles/clients-style.css">
+    <link rel="shortcut icon" href="./src/ladoalado.PNG" />
+
+</head>
+<body onload="preencheTabelaCliente()">
+    <header>
+        <div id="logo">
+            <img src="./src/ladoalado.PNG" alt="Logomarca da empresa">
+        </div>
+        <nav>
+            <ul>
+                <li class="menu-item"><a href="./index.html">Início</a></li>
+                <li class="menu-item"><a href="./products.html">Produtos</a></li> 
+                <li class="menu-item"><a>Clientes</a></li>
+                <li class="menu-item"><a href="./store.html">Loja</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="main">
+            <h1>Clientes</h1>
+            <div id="client">
+                <div id="container-clientes">
+                    <div id="container-tabela-clientes">
+                        <table summary="Clientes cadastrados">
+                            <caption>Tabela de clientes cadastrados</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Código</th>
+                                    <th scope="col">Nome do Cliente</th>
+                                    <th scope="col">E-mail</th>
+                                </tr>
+                            </thead>
+                            <tbody id="itens-tabela-clientes">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="container-cadastro-cliente" >
+                        <h2>Cadastro</h2>
+                        <form id="form">
+                            <div class="div-form">
+                                <label for="campo-nome">Nome</label>
+                                <input type="text" name="nome" id="campo-nome">
+                            </div>
+                            <div class="div-form">
+                                <label for="campo-email">Email</label>
+                                <input type="email" name="email" id="campo-email" step=".01">
+                            </div>
+                            <div class="div-form">
+                                <label for="campo-cep">CEP</label>
+                                <input type="text" name="cep" id="campo-cep">
+                            </div>
+                            <div class="div-form">
+                                <label for="campo-rua">Rua</label>
+                                <input type="text" name="rua" id="campo-rua">
+                            </div>
+                            <div class="div-form">
+                                <label for="campo-num">Número</label>
+                                <input type="number" name="numero" id="campo-num">
+                            </div>
+                            <div class="div-form">
+                                <label for="campo-comp">Complemento</label>
+                                <input type="text" name="complemento" id="campo-comp">
+                            </div>
+                            <div class="div-form">
+                                <label for="campo-cidade">Cidade</label>
+                                <input type="text" name="cidade" id="campo-cidade">
+                            </div>
+                            
+                            <div class="div-form">
+                                <label for="campo-estado">Estado</label>
+                                <input type="text" name="estado" id="campo-estado">
+                            </div>
+                            <div id="div-input">
+                                <input type="submit" value="Salvar" existe="false" cliente="" id="salvar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a class="redes-sociais" href="https://www.linkedin.com/in/felipesiqg/" target="_blank"><img class="redes-sociais" src="./src/linkedin.png" alt="linkedin"></a>
+        <p>Desenvolvido por Felipe Siqueira</p>
+        <a class="redes-sociais" href="https://github.com/felipesiqg" target="_blank"><img class="redes-sociais" src="./src/github.png" alt="github"></a>
+    </footer>
+    <script src="./scripts/clients.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+#client thead th{
+    background-color: #55555577;
+}
+#client th{
+    min-width: 100px;
+    padding: 5px 7px;
+}
+#client tbody th{
+    background-color: #AAAAAA;
+    cursor: pointer;
+    color: #000;
+}
+#container-clientes{
+    display: flex;
+    justify-content: space-evenly;
+}
+#container-cadastro-cliente{
+    background-color: #00000077;
+    border-radius: 15px ;
+    padding: 15px 25px;
+    max-height: 400px;
+    margin-top: 18px;
+    width: 30%;
+    box-shadow: 0px 0px 20px 1px #fff;
+}
+h1{
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.div-form{
+    display: flex;
+    justify-content: space-between;
+}
+#container-cadastro-cliente label{
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+#container-cadastro-cliente input{
+    margin-bottom: 10px;
+    width: 65%;
+    margin-right: 5px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+}
+#container-cadastro-cliente input[type='submit']{
+    background-color:#FAD806;
+    height: 30px;
+    min-width: 60px;
+    width: 50%;
+    margin-top: 20px;
+    color: #000;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+}
+#div-input{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+@media (max-width: 900px){
+    #container-clientes{
+        display: flex;
+        flex-direction: column;
+    }
+    #container-cadastro-cliente{
+        width: 80%;
+        margin-top: 30px;
+        align-self: center;
+    }
+    #container-tabela-clientes{
+        align-self: center;
+    }
+}

@@ -1,0 +1,83 @@
+#product thead th{
+    background-color: #55555577;
+}
+#product th{
+    min-width: 100px;
+    padding: 5px 7px;
+}
+#product tbody th{
+    background-color: #AAAAAA;
+    cursor: pointer;
+    color: #000;
+}
+#container-produtos{
+    display: flex;
+    justify-content: space-evenly;
+}
+#container-cadastro-produto{
+    background-color: #00000077;
+    border-radius: 15px ;
+    padding: 15px 25px;
+    max-height: 300px;
+    margin-top: 18px;
+    width: 30%;
+    box-shadow: 0px 0px 20px 0px #fff;
+}
+h1{
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.div-form{
+    display: flex;
+    justify-content: space-between;
+}
+#container-cadastro-produto label{
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+#container-cadastro-produto input{
+    margin-bottom: 10px;
+    width: 65%;
+    margin-right: 5px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#container-cadastro-produto input[type='submit']{
+    background-color:#fff;
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    min-width: 60px;
+    width: 50%;
+    margin-top: 50px;
+    color: #151616;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+}
+#div-input{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+@media (max-width: 900px){
+    #container-produtos{
+        display: flex;
+        flex-direction: column;
+    }
+    #container-cadastro-produto{
+        width: 80%;
+        margin-top: 30px;
+        align-self: center;
+    }
+    #container-tabela-produtos{
+        align-self: center;
+    }
+}

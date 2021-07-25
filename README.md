@@ -36,18 +36,11 @@ Ao clicar em um dos produtos podemos atualizar seus dados na área de Cadastro d
 
 Cria novos produtos e atualiza os já existentes. Os dados inseridos e atualizados são armazenados no LocalStorage para posterior consulta e manipulação.
 Os dados que podem ser inseridos são:
-```
-Nome
-```
-```
-Preço
-```
-```
-Descrição
-```
-```
-URL de imagem
-```
+
+- Nome
+- Preço
+- Descrição
+- URL de imagem
 
 ### Clientes
 
@@ -62,15 +55,10 @@ Ao clicar em um dos clientes podemos atualizar seus dados na área de Cadastro d
 
 Cria novos clientes e atualiza os já existentes. Os dados inseridos e atualizados são armazenados no LocalStorage para posterior consulta e manipulação.
 Os dados que podem ser inseridos são:
-```
-Nome
-```
-```
-Email
-```
-```
-Dados de endereço
-```
+
+- Nome
+- Email
+- Dados de endereço
 
 ## Loja
 
